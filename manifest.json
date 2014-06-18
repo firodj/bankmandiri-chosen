@@ -1,0 +1,18 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "BankMandiri Transfer Chosen",
+  "version": "1.1",
+
+  // Recommended
+  "author": "Fadhil Mandaga",
+  "description": "Mengurutkan daftar transfer berdasarkan nama pada BankMandiri.co.id",
+  "content_scripts":[
+   {
+      "matches": ["https://ib.bankmandiri.co.id/retail/FundTransfer.do?action=form"],
+	  "js": ["ibbankmandiricoid-1.user.js"],
+	  "css": [],
+	  "all_frames": true
+   }
+   ]
+}
